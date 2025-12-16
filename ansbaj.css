@@ -1,0 +1,57 @@
+/* EFEITO DE FUNDO LED QUE MUDA DE COR */
+@keyframes background-color-change {
+    0% { background-color: #ff0000; }
+    20% { background-color: #ffa500; }
+    40% { background-color: #ffff00; }
+    60% { background-color: #008000; }
+    80% { background-color: #0000ff; }
+    100% { background-color: #800080; }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    
+    animation: background-color-change 15s infinite alternate; 
+    font-family: Arial, sans-serif;
+}
+
+/* O QUADRADO VERMELHO (MUITO ARREDONDADO) */
+.container-principal {
+    width: 300px;
+    height: 300px;
+    background-color: #E63946; 
+    
+    /* Borda muito circular */
+    border-radius: 60px; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.8); /* Brilho */
+}
+
+/* O RETÂNGULO BRANCO (COM BORDAS ARREDONDADAS) */
+.retangulo-interno {
+    background-color: #FFFFFF; 
+    width: 80%; 
+    height: 50px; 
+    
+    /* BORDAS ARREDONDADAS: 10 pixels de raio */
+    border-radius: 10px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O TEXTO */
+.texto-logo {
+    color: #E63946; 
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
